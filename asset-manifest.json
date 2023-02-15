@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.c1e07e1b.js",
-    "static/media/Picture1.png": "/static/media/Picture1.c4c4a7f40f87a5ce12e1.png",
-    "static/media/tilted_vector.jpeg": "/static/media/tilted_vector.c17a51e967c8a7f46df5.jpeg",
-    "index.html": "/index.html",
-    "main.c1e07e1b.js.map": "/static/js/main.c1e07e1b.js.map"
+    "main.js": "/visionCheck/static/js/main.9fa3c127.js",
+    "static/media/Picture1.png": "/visionCheck/static/media/Picture1.c4c4a7f40f87a5ce12e1.png",
+    "static/media/tilted_vector.jpeg": "/visionCheck/static/media/tilted_vector.c17a51e967c8a7f46df5.jpeg",
+    "index.html": "/visionCheck/index.html",
+    "main.9fa3c127.js.map": "/visionCheck/static/js/main.9fa3c127.js.map"
   },
   "entrypoints": [
-    "static/js/main.c1e07e1b.js"
+    "static/js/main.9fa3c127.js"
   ]
 }
