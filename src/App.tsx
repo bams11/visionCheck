@@ -1,25 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Dashboard} from "./component/Dashboard";
+import {ProcessedImage} from "./component/ProcessedImage";
+import {OriginImage} from "./component/OriginImage";
+import {ImageInfo} from "./component/ImageInfo";
+import hanmech from "./assets/hanmech.jpeg";
+import {TiltedValue} from "./component/TiltedValue";
+import {RecoilRoot} from "recoil";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecoilRoot>
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          backgroundColor: "grey",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <div
+            style={{
+              width: "400px",
+              height: "100px",
+              border: "2px solid black",
+              display: "flex",
+              justifyContent: "center",
+              backgroundColor: "white",
+            }}
+          >
+            <img
+              src={hanmech}
+              alt={"sampleInput"}
+              style={{width: "100px", height: "100px"}}
+            />
+          </div>
+          <OriginImage />
+          <ImageInfo />
+        </div>
+        <div>
+          <ProcessedImage />
+          <div style={{display: "flex", flexDirection: "row"}}>
+            <TiltedValue />
+            <Dashboard />
+          </div>
+        </div>
+      </div>
+    </RecoilRoot>
   );
 }
 
